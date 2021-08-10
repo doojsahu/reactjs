@@ -1,6 +1,8 @@
-import react, { useState } from 'react';
+import react, { Component, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { ContextProvider }  from './Context';
+import Component1 from './Component1'
 
 function App() {
 
@@ -51,7 +53,10 @@ function App() {
                   </form>
                 )
               }
-          
+            {/* Component */}
+              <ContextProvider value={{ text: "Hello Team India" }}>
+                <Component1 />
+              </ContextProvider>
       </header>
     </div>
   );
