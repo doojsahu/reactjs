@@ -6,6 +6,16 @@ function App() {
 
   const [count, setCounter] = useState(0);
 
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const [showForm, toggleForm] = useState(true);
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    console.log('email', email);
+    console.log('password', password);
+  };
 
   return (
     <div className="App">
@@ -19,6 +29,29 @@ function App() {
                 setCounter(count - 1);
               }}>Minus</button>
           </div>
+              <br /><br />
+              <button onClick={() => {
+                // toggleForm(false)
+                toggleForm(!showForm)
+              }}>Toggle Form</button>
+              {
+                showForm && (
+                  <form onSubmit={onSubmit}>
+                    <label>
+                      <div>Email</div>
+                      <input type="email" value={email} onChange={(event) => {
+                        setEmail(event.target.value)
+                      }}/>
+                      <div>Password</div>
+                      <input type="Password" value={password} onChange={(event) => {
+                        setPassword(event.target.value)
+                      }}/>
+                    </label>
+                    <button type="submit">Signup</button>
+                  </form>
+                )
+              }
+          
       </header>
     </div>
   );
