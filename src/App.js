@@ -6,6 +6,7 @@ import Component1 from './Component1';
 import RandomComponent from './RandomComponent'
 
 import UseEffectHooks from './useeffect/UseEffect';
+import ReactRouter from './reactrouter/ReactRouter';
 
 function App() {
 
@@ -63,6 +64,8 @@ function App() {
 
               <RandomComponent />
               <UseEffectHooks />
+
+              <ReactRouter />
       </header>
     </div>
   );

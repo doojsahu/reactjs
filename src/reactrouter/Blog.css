@@ -1,0 +1,7 @@
+.blog-list{
+    list-style: none;
+}
+.blog-list-item{
+    border: 1px solid #ccc;
+    padding: 10px 13px;
+}
