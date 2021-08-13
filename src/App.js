@@ -5,6 +5,8 @@ import { ContextProvider }  from './Context';
 import Component1 from './Component1';
 import RandomComponent from './RandomComponent'
 
+import UseEffectHooks from './useeffect/UseEffect';
+
 function App() {
 
   const [count, setCounter] = useState(0);
@@ -60,6 +62,7 @@ function App() {
               </ContextProvider>
 
               <RandomComponent />
+              <UseEffectHooks />
       </header>
     </div>
   );
