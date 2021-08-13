@@ -2,7 +2,8 @@ import react, { Component, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { ContextProvider }  from './Context';
-import Component1 from './Component1'
+import Component1 from './Component1';
+import RandomComponent from './RandomComponent'
 
 function App() {
 
@@ -54,9 +55,11 @@ function App() {
                 )
               }
             {/* Component */}
-              <ContextProvider value={{ text: "Hello Team India" }}>
+              <ContextProvider value={{ text: "This text is passing via Context" }}>
                 <Component1 />
               </ContextProvider>
+
+              <RandomComponent />
       </header>
     </div>
   );

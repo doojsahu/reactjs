@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Notification from './context/Notification';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Notification>
+      <App />
+    </Notification>
   </React.StrictMode>,
   document.getElementById('root')
 );
