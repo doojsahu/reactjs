@@ -8,6 +8,8 @@ import RandomComponent from './RandomComponent'
 import UseEffectHooks from './useeffect/UseEffect';
 import ReactRouter from './reactrouter/ReactRouter';
 
+import UseRef from './useref/UseRef'
+
 function App() {
 
   const [count, setCounter] = useState(0);
@@ -66,6 +68,15 @@ function App() {
               <UseEffectHooks />
 
               <ReactRouter />
+
+              <br />
+              <br />
+              <br />
+              <br />
+              <UseRef />
+
+              <br />
+              <br />
       </header>
     </div>
   );
