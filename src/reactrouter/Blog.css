@@ -5,3 +5,10 @@
     border: 1px solid #ccc;
     padding: 10px 13px;
 }
+.nav-link{
+    color: #f7eded;
+    text-decoration: none;
+}
+.text-left{
+    text-align: left;
+}

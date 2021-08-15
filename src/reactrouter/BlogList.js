@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-
 import axios from 'axios';
 
 import './Blog.css'
+import { Link } from 'react-router-dom';
 
 const BlogList = () => {
     const [blogList, setBlogList] = useState([]);
@@ -25,7 +25,9 @@ const BlogList = () => {
             <ul className='blog-list'>
                 {
                     blogList.map((item) => {
-                        return <li className='blog-list-item' key={item}>{ item.title }</li>
+                        return <li className='blog-list-item' key={item}>
+                            <Link to={`/blogs/${item.id}`} className="nav-link">{ item.title }</Link>
+                        </li>
                     })
                 }
             </ul>
